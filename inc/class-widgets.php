@@ -20,13 +20,13 @@ class Widgets {
 	}
 
 	protected function __construct() {
-		require_once( ELEJD_WIDGETS_PATH . 'ele-menu.php' );
+		require_once( ELEJD_WIDGETS_PATH . 'class-elemenu.php' );
 
 		add_action( 'elementor/widgets/widgets_registered', [ $this, 'register_widgets' ] );
 	}
 
 	public function register_widgets() {
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor\ELE_Menu_Widget() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor\ELEMenu_Widget() );
 	}
 
 }

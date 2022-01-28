@@ -21,11 +21,11 @@ define( 'ELEJD_BASE', plugin_basename( __FILE__ ) );
 define( 'ELEJD_PATH', plugin_dir_path( __FILE__ ) );
 define( 'ELEJD_DIR', dirname( plugin_basename( __FILE__ ) ) );
 
-define( 'ELEJD_WIDGETS_PATH', ELEJD_PATH . 'classes/widgets/' );
+define( 'ELEJD_WIDGETS_PATH', ELEJD_PATH . 'inc/widgets/' );
 
 add_action( 'init', function() {
-  require_once( 'classes/class-widget-categories.php' );
-  require_once( 'classes/class-widgets.php' );
+  require_once( 'inc/class-widget-categories.php' );
+  require_once( 'inc/class-widgets.php' );
 
   Widget_Categories::get_instance();
   Widgets::get_instance();

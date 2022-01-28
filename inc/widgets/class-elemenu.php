@@ -7,10 +7,10 @@ use ELEJD\Widget_Categories;
 
 if ( !defined( 'ABSPATH' ) ) exit;
 
-class ELE_Menu_Widget extends Widget_Base {
+class ELEMenu_Widget extends Widget_Base {
 
   public function get_name() {
-    return 'ele-menu';
+    return 'elemenu';
   }
 
   public function get_title() {
