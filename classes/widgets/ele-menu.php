@@ -8,7 +8,7 @@ use ELEJD\Widget_Categories;
 if ( !defined( 'ABSPATH' ) ) exit;
 
 class ELE_Menu_Widget extends Widget_Base {
-  
+
   public function get_name() {
     return 'ele-menu';
   }
@@ -22,8 +22,8 @@ class ELE_Menu_Widget extends Widget_Base {
   }
 
   public function get_categories() {
-		return [ 'theme-elements', Widget_Categories::$JUNK_DRAWER_CATEGORY ];
-	}
+    return [ 'theme-elements', Widget_Categories::$JUNK_DRAWER_CATEGORY ];
+  }
 
   protected function render() {
     ?>

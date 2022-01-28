@@ -20,7 +20,7 @@ class Widgets {
 	}
 
 	protected function __construct() {
-    require_once( ELEJD_WIDGETS_PATH . 'ele-menu.php' );
+		require_once( ELEJD_WIDGETS_PATH . 'ele-menu.php' );
 
 		add_action( 'elementor/widgets/widgets_registered', [ $this, 'register_widgets' ] );
 	}
